@@ -5,7 +5,7 @@ a stem core template
 ## usage
 
 ```
-$ mkdir ./myStem
-$ cd ./myStem
+$ mkdir ./myProject
+$ cd ./myProject
 $ npx organic-stem-core-template
 ```
