@@ -4,7 +4,7 @@ const StackUpgrade = require('organic-stack-upgrade')
 const path = require('path')
 const exec = require('util').promisify(require('child_process').exec)
 
-const execute = async function ({destDir = process.cwd(), answers}) {
+const execute = async function ({destDir = process.cwd(), answers} = {}) {
   let stack = new StackUpgrade({
     destDir: destDir,
     name: 'organic-stem-core-template',
