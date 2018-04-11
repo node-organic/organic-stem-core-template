@@ -15,7 +15,10 @@ const execute = async function ({destDir = process.cwd(), answers} = {}) {
     answers
   })
   console.info('run npm install...')
-  let npmOutput = await exec('npm install')
+  let npmOutput = await exec('npm install', {
+    cwd: destDir,
+    env: process.env
+  })
   console.info(npmOutput.stdout)
   console.error(npmOutput.stderr)
 }
