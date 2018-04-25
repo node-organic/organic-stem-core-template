@@ -1,3 +1,3 @@
 # lib folder
 
-contains project libraries/modules
+contains project common libraries/modules
