@@ -7,5 +7,5 @@ a stem core template
 ```
 $ mkdir ./myProject
 $ cd ./myProject
-$ npx organic-stem-core-template
+$ npx node-organic/organic-stem-core-template
 ```
