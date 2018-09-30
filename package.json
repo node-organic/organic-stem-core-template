@@ -1,11 +1,11 @@
 {
   "name": "organic-stem-core-template",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "bin": {
     "organic-stem-core-template": "./index.js"
   },
   "dependencies": {
-    "organic-stack-upgrade": "1.2.0"
+    "organic-stack-upgrade": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^4.18.2",

@@ -7,13 +7,17 @@ const exec = require('util').promisify(require('child_process').exec)
 const execute = async function ({destDir = process.cwd(), answers} = {}) {
   let stack = new StackUpgrade({
     destDir: destDir,
-    name: 'organic-stem-core-template',
-    version: '1.0.0'
+    packagejson: path.join(__dirname, 'package.json')
   })
-  await stack.configureMergeAndUpdateJSON({
-    sourceDir: path.join(__dirname, 'seed'),
+  let resulted_answers = await stack.configure({
+    sourceDirs: [path.join(__dirname, 'seed')],
     answers
   })
+  await stack.merge({
+    sourceDir: path.join(__dirname, 'seed'),
+    resulted_answers
+  })
+  await stack.updateJSON()
   console.info('run npm install...')
   let npmOutput = await exec('npm install', {
     cwd: destDir,
