@@ -1,3 +1,3 @@
 # cells folder
 
-contains cells related to the project
+contains cells and their related implementation code

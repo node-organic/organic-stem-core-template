@@ -1,3 +1,3 @@
 # dna folder
 
-contains DNA information about the project.
+Contains DNA information about the project and `dna/cells` contains cells' dna respectively.
