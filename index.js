@@ -8,6 +8,8 @@ const execute = async function ({destDir = process.cwd(), answers}) {
     destDir: destDir,
     packagejson: path.join(__dirname, 'package.json')
   })
+  answers = answers || {}
+  answers['common-modules-path'] = 'node_modules'
   let resulted_answers = await stack.configure({
     sourceDirs: [path.join(__dirname, 'seed')],
     answers
