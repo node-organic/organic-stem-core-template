@@ -4,7 +4,7 @@
   "bin": {
     "organic-stem-core-template": "./index.js"
   },
-  "files": ["./seed/cells/node_modules/lib/*"],
+  "files": ["seed/*"],
   "dependencies": {
     "organic-stack-upgrade": "^2.0.0"
   },
