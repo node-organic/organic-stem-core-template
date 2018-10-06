@@ -24,7 +24,7 @@ const execute = async function ({destDir = process.cwd(), answers}) {
 if (module.parent) {
   module.exports = execute
 } else {
-  execute().catch((err) => {
+  execute({}).catch((err) => {
     console.error(err)
     process.exit(1)
   })
