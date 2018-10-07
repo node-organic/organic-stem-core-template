@@ -1,6 +1,12 @@
 {
   "name": "{{{project-name}}}",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.12.0"
+  },
+  "scripts": {
+    "setup": "npm install && angel repo cells -- npm install"
+  },
   "dependencies": {
     "organic-angel": "^0.3.2",
     "angelscripts-help": "^0.2.0",

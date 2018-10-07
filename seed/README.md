@@ -3,6 +3,7 @@
 ## setup
 
 ```
+$ git clone ...
 $ cd {{{project-name}}}
-$ npm install
+$ npm run setup
 ```
