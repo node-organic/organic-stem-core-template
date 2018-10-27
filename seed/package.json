@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "organic-angel": "^0.3.2",
+    "organic-dna-loader": "^1.5.1",
+    "organic-dna-cells-info": "^1.0.0",
     "angelscripts-help": "^0.2.0",
     "angelscripts-monorepo": "^2.0.0",
     "angelabilities-package-scripts": "^0.1.0"
