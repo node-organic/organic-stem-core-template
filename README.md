@@ -1,4 +1,4 @@
-# Depricated. 
+# Deprecated. 
 
 Code moved into [organic-stem-skeleton](https://github.com/node-organic/organic-stem-skeleton)
 
